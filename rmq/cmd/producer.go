@@ -23,7 +23,7 @@ func sendScanMessages(ctx context.Context, done <-chan int, stream <-chan int, c
 			scanInstance := sensors.Scan{
 				AngleMin:       0.15,
 				AngleMax:       1.74,
-				Ranges:         make([]float32, 100.0, 540),
+				Ranges:         make([]float32, 540, 540),
 				AngleIncrement: 0.01,
 				ScanTime:       i,
 			}
