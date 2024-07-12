@@ -47,7 +47,7 @@ func sendScanMessages(ctx context.Context, done <-chan int, stream <-chan int, c
 }
 
 func main() {
-	conn, err := internal.ConnectRabbitMQ("seven-admin", "123456", "localhost:5672", "customers")
+	conn, err := internal.ConnectRabbitMQ("seven-admin", "123456", "ec2-18-61-25-137.ap-south-2.compute.amazonaws.com:5672", "robots")
 	if err != nil {
 		panic(err)
 	}
